@@ -1,0 +1,312 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, footer {
+    background-color: #eff3fb;
+    color: #334b8c;
+    text-align: center;
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #334b8c;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 20px; */
+}
+
+.actlogo {
+    margin: 10px;
+    width: 160px;
+}
+
+.water-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    position: relative; /* Establishes a positioning context */
+    width: 100%; /* Adjust as needed */
+    /* max-width: 600px; */
+    background:rgba(0,0,0,0.6);
+    opacity: 0.8;
+}
+
+/* Style the image */
+.image-container img {
+    width: 100%; /* Ensure image is responsive */
+    display: block; /* Remove default spacing around images */
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1; /* Ensures it sits above the image */
+}
+
+/* Style the text */
+.image-container .text-overlay {
+    position: absolute; /* Position relative to the container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust centering */
+    color: white; /* Text color */
+    /* background-color: rgba(0, 0, 0, 0.5); Add a semi-transparent background */
+    padding: 10px 20px; /* Add some padding */
+    font-size: 3rem; /* Adjust font size */
+    text-align: center; /* Center the text */
+    font-weight: 700;
+    z-index: 2;
+}
+
+.rtt-info {
+    background: linear-gradient(to bottom, #eef3fa, #ffffff); /* Light gradient */
+    padding: 40px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.rtt-info h1 {
+    font-size: 2rem;
+    color: #334b8c; /* Darker blue for the title */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rtt-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a4a4a; /* Neutral gray for text */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.rtt-info ul {
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+    max-width: 600px;
+    text-align: left;
+}
+
+.rtt-info ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.rtt-info ul li:before {
+    content: '•'; /* Custom bullet point */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    color: #334b8c;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #334b8c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #2a3f70;
+}
+
+.three-concepts {
+    background: linear-gradient(to bottom, #eef3fa, #ffffff); /* Light gradient */
+    padding: 40px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.concept {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #334b8c;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 20px;
+}
+
+.take-action {
+    background: linear-gradient(to bottom, #eef3fa, #ffffff); /* Light gradient */
+    padding: 40px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #334b8c;
+}
+
+.sophie {
+    width: 40%;
+    margin-right: 30px;
+    /* height: 100%; */
+}
+
+.threedots {
+    width: 30px;
+}
+
+.consultation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consult {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #334b8c;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    color: #2a3f70;
+    background-color: #eef3fa;
+}
+
+.about-section {
+    background: linear-gradient(to bottom, #eef3fa, #ffffff); /* Light gradient */
+    padding: 40px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2rem;
+    color: #334b8c; /* Darker blue for the title */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a4a4a; /* Neutral gray for text */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about-section ul {
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-section ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.about-section ul li:before {
+    content: '•'; /* Custom bullet point */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    color: #334b8c;
+}
+
+.quote-section {
+    background: linear-gradient(to bottom, #eef3fa, #ffffff); /* Light gradient */
+    padding: 40px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #2a3f70;
+}
+
+@media (max-width: 768px) {
+    .rtt-info {
+        padding: 20px;
+    }
+
+    .rtt-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .rtt-info ul {
+        text-align: center;
+    }
+
+    .image-container .text-overlay {
+        font-size: 1.4rem;
+    }
+
+    .three-concepts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+
+}
