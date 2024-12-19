@@ -95,7 +95,7 @@ main {
     text-align: center;
 }
 
-.rtt-info h1 {
+.rtt-info h1, .rtt-info h2 {
     font-size: 2rem;
     color: #334b8c; /* Darker blue for the title */
     margin-bottom: 20px;
@@ -201,6 +201,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 50%;
+    margin-left: 25%;
 }
 
 .consult {
@@ -214,6 +216,8 @@ main {
     padding: 10px;
     color: #2a3f70;
     background-color: #eef3fa;
+    min-width: 300px;
+    min-height: 250px;
 }
 
 .about-section {
@@ -276,6 +280,44 @@ main {
     color: #2a3f70;
 }
 
+.form-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-details label {
+    font-size: 1.1rem;
+    margin: 10px;
+}
+
+.form-details input, .form-details textarea {
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #334b8c;
+}
+
+.form-details button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #71d3f6;
+    cursor: pointer;
+    border: none;
+    margin-top: 18px;
+}
+
+.form-details button:hover {
+    background-color: #7dc5d1;
+    /* color: white; */
+}
+
+.benefits-of-rtt {
+    text-align: left;
+}
+
 @media (max-width: 768px) {
     .rtt-info {
         padding: 20px;
@@ -307,6 +349,12 @@ main {
         flex-direction: column;
     }
 
-
+    .form-details input, .form-details textarea {
+        width: 50%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid #334b8c;
+    }
 
 }
