@@ -15,6 +15,8 @@ submitBtn.addEventListener('click', function(e) {
       return;
     }
 
+    submitBtn.disabled = true;
+
     // Create the request body
   const requestBody = {
     firstName,
@@ -42,13 +44,15 @@ submitBtn.addEventListener('click', function(e) {
     .then((data) => {
       if (data.success) {
         alert('Email sent successfully!');
+        submitBtn.disabled = false;
       } else {
         alert('Failed to send email: ' + data.message);
+        submitBtn.disabled = false;
       }
     })
     .catch((error) => {
       console.error('Error:', error);
       alert('An error occurred. Please try again.');
+      submitBtn.disabled = false;
     });
-    
-    });
+});
