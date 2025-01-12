@@ -79,7 +79,7 @@ main {
     color: white; /* Text color */
     /* background-color: rgba(0, 0, 0, 0.5); Add a semi-transparent background */
     padding: 10px 20px; /* Add some padding */
-    font-size: 3rem; /* Adjust font size */
+    font-size: 2.5rem; /* Adjust font size */
     text-align: center; /* Center the text */
     font-weight: 700;
     z-index: 2;
